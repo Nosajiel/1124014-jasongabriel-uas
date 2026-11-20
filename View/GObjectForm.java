@@ -21,7 +21,7 @@ public abstract class GObjectForm<T extends GObject> {
     String[] fields = getFields();
         for (int i = 0; i < this.label.size(); i++) {
             GObject record = this.label.get(i);
-            String[] values = this.constructModelFromValues(record.getlabel(), record.getvalues());
+            String[] values = this.constructModelFromValues(record.getLabel(), record.getValues());
             System.out.println(i + ". ");
             for (int j = 0; j < fields.length; j++) {
                 System.out.print(fields[j] + ": " + values[j] + " ");
